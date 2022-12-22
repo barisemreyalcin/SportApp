@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .header {
+        padding: 30px;
+        text-align: center;
+        background-color: #56a7a7;
+        color: #fff;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: center;
+        background-color: #303841;
+      }
+
+      .navbar a {
+        color: #fff;
+        padding: 16px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .navbar a:hover {
+        background-color: #d8d9cf;
+        color: #000;
+      }
+
+      .ph {
+        width: 100%;
+        padding: 20px;
+        margin-top: 10px;
+      }
+
+      #main {
+        display: flex;
+      }
+
+      #sidebar {
+        flex: 25%;
+        order: 1;
+        padding: 20px;
+        background-color: #eeeeee;
+      }
+
+      #content {
+        flex: 75%;
+        padding: 20px;
+      }
+
+      .box {
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin: 10px 0;
+      }
+
+      #footer {
+        display: flex;
+        background-color: #56a7a7;
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+      }
+
+      #footer a {
+        display: inline-block;
+        padding: 10px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+      }
+
+      #footer a:hover {
+        background-color: #78baba;
+      }
+
+      @media (max-width: 700px) {
+        #main,
+        .navbar {
+          flex-direction: column;
+        }
+
+        #sidebar {
+          order: -1;
+        }
+      } ;
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>SportApp</h1>
+      <p>Heart of sport beats here.</p>
+    </div>
+
+    <div class="navbar">
+      <a href="">Categories</a>
+      <a href="">Live Score</a>
+      <a href="">News</a>
+      <a href="">Game Highlights</a>
+    </div>
+
+    <div id="main">
+      <div id="sidebar">
+        <div class="box">
+          <h2>Top 10 Goals of the World Cup</h2>
+          <a href=""><img src="Images/world-cup.jpg" alt="" width="400" /></a>
+          <p>
+            2022 World Cup ended, and we witnessed amazing goals. We arranged
+            "Top 10 Goals of 2022 Qatar World Cup" for you. Enjoy it..!
+          </p>
+        </div>
+        <div class="box">
+          <h2>Top 10 Plays of the Night - NBA</h2>
+          <a href=""> <img src="Images/nba.jpg" alt="" width="400" /> </a>
+          <p>
+            Seven games were played in NBA tonight, and these are the top 10
+            plays of the night.
+          </p>
+        </div>
+        <div class="box">
+          <h2>Top 10 Athletes of the Tennis History</h2>
+          <a href=""> <img src="Images/tennis.jpg" alt="" width="400" /> </a>
+          <p>
+            ESPN announced the best athletes of the tennis history. See the
+            lists full of legendary athletes..!
+          </p>
+        </div>
+        <div class="box">
+          <h2>Toughest Rugby Plays of the Week!</h2>
+          <a href="">
+            <img src="Images/20220924_CUP001.jpg" alt="" width="400" />
+          </a>
+          <p>
+            The strongest players and strongest plays... Watch the most exciting
+            plays of the week..!
+          </p>
+        </div>
+        <div class="box">
+          <h2>Euroleague - Top 10 Plays of the Week</h2>
+          <a href="">
+            <img src="Images/eu.jpg" alt="" width="400" />
+          </a>
+          <p>
+            Euroleague steams ahead! Here are the top 10 plays of this week!
+          </p>
+        </div>
+      </div>
+
+      <div id="content">
+        <div class="box">
+          <h2>ARGENTINA IS THE WORLD CHAMPION</h2>
+          <img src="Images/arg.jpeg" alt="" width="100%" />
+          <p>
+            Argentina has won the 2022 World Cup in Lusail, Qatar, defeating
+            France with a 3-3 (4-2 penalty) final score after a nail-bitting
+            match that concluded in a penalty shootout.
+          </p>
+          <p>
+            The first half of the match saw Argentina claim a 2-0 lead thanks to
+            goals from Angel Di Maria and the legendary Lionel Messi, who played
+            his final World Cup today. With a penalty kick 23 minutes in, Messi
+            became the first man in FIFA World Cup history to score in all five
+            rounds at a single tournament.
+          </p>
+          <p>
+            Progressing into the second half, Argentina looked to secure their
+            lead (and avoid exhausting their players) by slowing down their
+            play—but France soon rallied to a tie with two consecutive goals
+            from Kylian Mbappé, the team’s 23-year-old star player. (Mbappé
+            impressively earned both points within two minutes of each other,
+            causing French fans—among them an effusive Emmanuel Macron—to go
+            wild.)
+          </p>
+          <p>
+            During extra time, Messi scored for Argentina yet again, bringing
+            the score to 3-2, before Mbappé pulled off a hat trick, forcing a
+            tie-breaking shootout at 3-3. While Mbappé and Randal Kolo Muani
+            went on to convert their penalties for France, misses from Kingsley
+            Coman and Aurelien Tchouameni cleared the way for an Argentine win,
+            after Messi, Paulo Dybala, Leandro Paredes, and finally 25-year-old
+            Gonzalo Montiel all found the back of the net, clinching the match.
+          </p>
+          <img src="Images/GettyImages-1450102641.jpg" alt="" width="100%" />
+          <p>
+            Both teams today were up for their third World Cup; France has worn
+            the Cup twice, in 1998 and 2018, while Argentina won in 1978 and
+            1986.
+          </p>
+          <p>
+            Today’s nerve-racking match follows up yesterday’s equally thrilling
+            third place play-off, in which Croatia defeated Morocco 2-1. It
+            marked the second time Croatia has won third place in the World Cup,
+            having previously finished third back in 1998. Morocco’s
+            fourth-place finish, meanwhile, was still a historic moment, making
+            them the first African nation to reach the World Cup semifinals.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <a href="">Social</a>
+      <a href="">Contact</a>
+      <a href="">Help</a>
+    </div>
+  </body>
+</html>
